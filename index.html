@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Player IPTV</title>
+    <link href="https://vjs.zencdn.net/7.19.5/video-js.css" rel="stylesheet" />
+</head>
+<body>
+    <video id="my-video" class="video-js" controls preload="auto" width="640" height="360" data-setup='{"playbackRates": [1, 1.5, 2], "techOrder": ["html5"]}'></video>
+    <script src="https://vjs.zencdn.net/7.19.5/video.js"></script>
+    <script>
+        var player = videojs('my-video');
+        player.src('https://seu-link-da-lista-m3u8');
+        player.play();
+    </script>
+</body>
+</html>
